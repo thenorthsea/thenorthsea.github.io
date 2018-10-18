@@ -640,6 +640,7 @@
     
       <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
       <script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+      <script src="/js/md5.min.js"></script>
       <script type="text/javascript">
         const gitalk = new Gitalk({
           clientID: '5396651da779e97ca333',
@@ -647,6 +648,7 @@
           repo: 'thenorthsea.github.io',
           owner: 'thenorthsea',
           admin: 'thenorthsea'.split(','),
+          id: md5(location.pathname),
           pagerDirection: 'first',
           // facebook-like distraction free mode
           distractionFreeMode: false
