@@ -1817,7 +1817,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #4f6a0d;
+  background: #0effff;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3011,6 +3011,15 @@ pre .javascript .function {
     text-align: justify;
   }
 }
-body {
-  background: url("/images/background.jpg");
+@media screen and (min-width: 1200px) {
+  body {
+    background-image: url("/images/background.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: 50% 50%;
+    background-size: cover;
+  }
+  #footer a {
+    color: #eee;
+  }
 }
