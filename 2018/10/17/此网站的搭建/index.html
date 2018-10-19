@@ -72,7 +72,7 @@
 
 
 
-  <meta name="keywords" content="hexo," />
+  <meta name="keywords" content="hexo,NexT," />
 
 
 
@@ -84,19 +84,17 @@
 
 
 <meta name="description" content="域名 https 支持 参考了 为Github page绑定自定义域名并实现https访问  感谢 CLOUDFLARE 的免费服务。 NOTE： 经过测试，设置后可以使用 https 和 http 来访问域名，但是默认使用 http。因此，为了域名可达，根目录中的 _config.yml 的 url 属性还是应该为 http 开头的。">
-<meta name="keywords" content="hexo">
+<meta name="keywords" content="hexo,NexT">
 <meta property="og:type" content="article">
 <meta property="og:title" content="我的网站的搭建配置">
 <meta property="og:url" content="http://thenorthsea.cn/2018/10/17/此网站的搭建/index.html">
 <meta property="og:site_name" content="北冥有鱼">
 <meta property="og:description" content="域名 https 支持 参考了 为Github page绑定自定义域名并实现https访问  感谢 CLOUDFLARE 的免费服务。 NOTE： 经过测试，设置后可以使用 https 和 http 来访问域名，但是默认使用 http。因此，为了域名可达，根目录中的 _config.yml 的 url 属性还是应该为 http 开头的。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:image" content="https://i.loli.net/2018/10/18/5bc877472fd9e.png">
-<meta property="og:updated_time" content="2018-10-19T12:30:24.263Z">
+<meta property="og:updated_time" content="2018-10-19T12:52:44.731Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="我的网站的搭建配置">
 <meta name="twitter:description" content="域名 https 支持 参考了 为Github page绑定自定义域名并实现https访问  感谢 CLOUDFLARE 的免费服务。 NOTE： 经过测试，设置后可以使用 https 和 http 来访问域名，但是默认使用 http。因此，为了域名可达，根目录中的 _config.yml 的 url 属性还是应该为 http 开头的。">
-<meta name="twitter:image" content="https://i.loli.net/2018/10/18/5bc877472fd9e.png">
 
 
 
@@ -344,7 +342,7 @@
                 <i class="fa fa-calendar-check-o"></i>
               </span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-10-19T20:30:24+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-10-19T20:52:44+08:00">
                 2018-10-19
               </time>
             
@@ -409,7 +407,7 @@
                 </span>
                 
                 <span title="字数统计">
-                  417 字
+                  376 字
                 </span>
               
 
@@ -456,18 +454,31 @@
 <h3 id="评论功能：-valine"><a href="#评论功能：-valine" class="headerlink" title="评论功能： valine"></a>评论功能： valine</h3><blockquote>
 <p>参考自 <a href="https://blog.csdn.net/blue_zy/article/details/79071414" title="https://blog.csdn.net/blue_zy/article/details/79071414" target="_blank" rel="noopener">为你的Hexo加上评论系统-Valine</a></p>
 </blockquote>
+<p> 步骤总结为：</p>
+<ol>
+<li>注册 LeanCloud，新建应用，获得 appid 和 appkey</li>
+<li>编辑主题配置文件</li>
+<li>LeanCloud 安全中心中添加 Web 安全域名</li>
+</ol>
 <p><strong>NOTE：</strong> 注意 next 主题的 <code>_config.yml</code> 配置文件中是 <code>app_id</code> 还是 <code>appid</code>，<code>app_key</code> 还是 <code>appkey</code>，不同版本中不同。</p>
-<h3 id="文章阅读统计：-leancloud"><a href="#文章阅读统计：-leancloud" class="headerlink" title="文章阅读统计： leancloud"></a>文章阅读统计： leancloud</h3><h3 id="添加-RSS-deprecated"><a href="#添加-RSS-deprecated" class="headerlink" title="添加 RSS [deprecated]"></a>添加 RSS [deprecated]</h3><blockquote>
-<p>参考自 <a href="https://segmentfault.com/a/1190000009544924" title="https://segmentfault.com/a/1190000009544924" target="_blank" rel="noopener">hexo的next主题个性化配置教程</a></p>
+<h3 id="文章阅读统计：-leancloud"><a href="#文章阅读统计：-leancloud" class="headerlink" title="文章阅读统计： leancloud"></a>文章阅读统计： leancloud</h3><blockquote>
+<p>参考了 <a href="https://lfwen.site/2016/05/31/add-count-for-hexo-next/" title="https://lfwen.site/2016/05/31/add-count-for-hexo-next/" target="_blank" rel="noopener">Hexo博客-NexT主题：使用leancloud进行页面访客统计</a></p>
 </blockquote>
-<p><img src="https://i.loli.net/2018/10/18/5bc877472fd9e.png" alt="微信图片_20181018200542.png"></p>
-<p>首先，切换到根目录，安装 Hexo 插件 hexo-generator-feed：（会保存在 <code>node_modules</code> 文件夹）<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">$</span> npm install --save hexo-generator-feed</span><br></pre></td></tr></table></figure></p>
-<p>接下来，进入根目录下的 <code>_config.yml</code> 文件，<strong>添加</strong>：<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span> Extensions</span><br><span class="line"><span class="meta">#</span># Plugins: http://hexo.io/plugins/</span><br><span class="line">plugins: hexo-generate-feed</span><br></pre></td></tr></table></figure></p>
-<p>然后，进入 themes/next 目录下的 <code>_config.yml</code> 文件，<strong>修改</strong>：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># Set rss to false to disable feed link.</span></span><br><span class="line"><span class="comment"># Leave rss as empty to use site's feed link.</span></span><br><span class="line"><span class="comment"># Set rss to specific value if you have burned your feed already.</span></span><br><span class="line">rss: /atom.xml</span><br></pre></td></tr></table></figure></p>
-<p>配置完成后，重新生成一次（会在 ./public 文件夹中看到 atom.xml 文件）<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g</span><br></pre></td></tr></table></figure></p>
-<h3 id="搜索功能：-algolia-deprecated"><a href="#搜索功能：-algolia-deprecated" class="headerlink" title="搜索功能： algolia [deprecated]"></a>搜索功能： algolia [deprecated]</h3><blockquote>
-<p>参考了 <a href="https://juejin.im/post/5af3f9d1518825673e35a6eb" title="https://juejin.im/post/5af3f9d1518825673e35a6eb" target="_blank" rel="noopener">Hexo+Next集成Algolia搜索</a></p>
+<p>步骤总结为：</p>
+<ol>
+<li>配置 LeanCloud 获取 appid 和 appkey，创建 Counter</li>
+<li>配置 Hexo</li>
+<li>LeanCloud 安全中心中添加 Web 安全域名</li>
+</ol>
+<h3 id="搜索功能：-Local-Search"><a href="#搜索功能：-Local-Search" class="headerlink" title="搜索功能： Local Search"></a>搜索功能： Local Search</h3><blockquote>
+<p>参考了 <a href="http://theme-next.iissnan.com/third-party-services.html#local-search" title="http://theme-next.iissnan.com/third-party-services.html#local-search" target="_blank" rel="noopener">Local Search</a></p>
 </blockquote>
+<p>步骤总结为：</p>
+<ol>
+<li>安装 <code>hexo-generator-searchdb</code></li>
+<li>编译站点配置文件</li>
+<li>编辑主题配置文件</li>
+</ol>
 <h3 id="其它优化参考"><a href="#其它优化参考" class="headerlink" title="其它优化参考"></a>其它优化参考</h3><ol>
 <li><a href="https://zhuanlan.zhihu.com/p/33616481" title="https://zhuanlan.zhihu.com/p/33616481" target="_blank" rel="noopener">Hexo搭建的GitHub博客之优化大全</a></li>
 </ol>
@@ -500,6 +511,8 @@
         <div class="post-tags">
           
             <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
+          
+            <a href="/tags/NexT/" rel="tag"><i class="fa fa-tag"></i> NexT</a>
           
         </div>
       
@@ -626,7 +639,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">1</span>
+                  <span class="site-state-item-count">2</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -695,7 +708,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#域名-https-支持"><span class="nav-number">1.</span> <span class="nav-text">域名 https 支持</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置网站背景"><span class="nav-number">2.</span> <span class="nav-text">设置网站背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#评论功能：-valine"><span class="nav-number">3.</span> <span class="nav-text">评论功能： valine</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章阅读统计：-leancloud"><span class="nav-number">4.</span> <span class="nav-text">文章阅读统计： leancloud</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#添加-RSS-deprecated"><span class="nav-number">5.</span> <span class="nav-text">添加 RSS [deprecated]</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#搜索功能：-algolia-deprecated"><span class="nav-number">6.</span> <span class="nav-text">搜索功能： algolia [deprecated]</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其它优化参考"><span class="nav-number">7.</span> <span class="nav-text">其它优化参考</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#域名-https-支持"><span class="nav-number">1.</span> <span class="nav-text">域名 https 支持</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置网站背景"><span class="nav-number">2.</span> <span class="nav-text">设置网站背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#评论功能：-valine"><span class="nav-number">3.</span> <span class="nav-text">评论功能： valine</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章阅读统计：-leancloud"><span class="nav-number">4.</span> <span class="nav-text">文章阅读统计： leancloud</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#搜索功能：-Local-Search"><span class="nav-number">5.</span> <span class="nav-text">搜索功能： Local Search</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其它优化参考"><span class="nav-number">6.</span> <span class="nav-text">其它优化参考</span></a></li></ol></div>
             
 
           </div>
