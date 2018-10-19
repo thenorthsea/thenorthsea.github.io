@@ -152,7 +152,7 @@ $("figure").hover(
             $copyBtn.stop();
             $copyBtn.css("opacity", 0.8);
             $copyBtn.css("display", "block");
-            $copyBtn.css("top", parseInt($copyBtn.css("top")) + $(this).offset().top - $copyBtn.offset().top + 3);
+            $copyBtn.css("top", parseInt($copyBtn.css("top")) + $(this).offset().top - $copyBtn.offset() + 3);
             $copyBtn.css("left", -$copyBtn.width() - 3);
         }
     },
