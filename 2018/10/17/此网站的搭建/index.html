@@ -83,18 +83,18 @@
 
 
 
-<meta name="description" content="域名 https 支持 参考了 为Github page绑定自定义域名并实现https访问  感谢 CLOUDFLARE 的免费服务。 NOTE： 经过测试，设置后可以使用 https 和 http 来访问域名，但是默认使用 http。因此，为了域名可达，根目录中的 _config.yml 的 url 属性还是应该为 http 开头的。">
+<meta name="description" content="我的这个网站使用 Github Page + hexo 搭建的，使用了 NexT 的主题。更多的个性化设置将在下文介绍。">
 <meta name="keywords" content="hexo,NexT">
 <meta property="og:type" content="article">
 <meta property="og:title" content="我的网站的搭建配置">
 <meta property="og:url" content="http://thenorthsea.cn/2018/10/17/此网站的搭建/index.html">
 <meta property="og:site_name" content="北冥有鱼">
-<meta property="og:description" content="域名 https 支持 参考了 为Github page绑定自定义域名并实现https访问  感谢 CLOUDFLARE 的免费服务。 NOTE： 经过测试，设置后可以使用 https 和 http 来访问域名，但是默认使用 http。因此，为了域名可达，根目录中的 _config.yml 的 url 属性还是应该为 http 开头的。">
+<meta property="og:description" content="我的这个网站使用 Github Page + hexo 搭建的，使用了 NexT 的主题。更多的个性化设置将在下文介绍。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-10-19T12:52:44.731Z">
+<meta property="og:updated_time" content="2018-10-19T13:05:48.930Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="我的网站的搭建配置">
-<meta name="twitter:description" content="域名 https 支持 参考了 为Github page绑定自定义域名并实现https访问  感谢 CLOUDFLARE 的免费服务。 NOTE： 经过测试，设置后可以使用 https 和 http 来访问域名，但是默认使用 http。因此，为了域名可达，根目录中的 _config.yml 的 url 属性还是应该为 http 开头的。">
+<meta name="twitter:description" content="我的这个网站使用 Github Page + hexo 搭建的，使用了 NexT 的主题。更多的个性化设置将在下文介绍。">
 
 
 
@@ -342,7 +342,7 @@
                 <i class="fa fa-calendar-check-o"></i>
               </span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-10-19T20:52:44+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-10-19T21:05:48+08:00">
                 2018-10-19
               </time>
             
@@ -407,7 +407,7 @@
                 </span>
                 
                 <span title="字数统计">
-                  376 字
+                  411 字
                 </span>
               
 
@@ -442,12 +442,13 @@
       
 
       
-        <h3 id="域名-https-支持"><a href="#域名-https-支持" class="headerlink" title="域名 https 支持"></a>域名 https 支持</h3><blockquote>
+        <p>我的这个网站使用 <a href="https://pages.github.com/" title="https://pages.github.com/" target="_blank" rel="noopener">Github Page</a> + <a href="https://hexo.io/zh-cn/" title="https://hexo.io/zh-cn/" target="_blank" rel="noopener">hexo</a> 搭建的，使用了 <a href="https://github.com/iissnan/hexo-theme-next/blob/master/README.cn.md" title="https://github.com/iissnan/hexo-theme-next/blob/master/README.cn.md" target="_blank" rel="noopener">NexT</a> 的主题。更多的个性化设置将在下文介绍。</p>
+<a id="more"></a>
+<h3 id="域名-https-支持"><a href="#域名-https-支持" class="headerlink" title="域名 https 支持"></a>域名 https 支持</h3><blockquote>
 <p>参考了 <a href="https://blog.csdn.net/yucicheung/article/details/79560027" title="https://blog.csdn.net/yucicheung/article/details/79560027" target="_blank" rel="noopener">为Github page绑定自定义域名并实现https访问</a></p>
 </blockquote>
 <p>感谢 <a href="https://dash.cloudflare.com" title="https://dash.cloudflare.com" target="_blank" rel="noopener">CLOUDFLARE</a> 的免费服务。</p>
 <p><strong>NOTE：</strong> 经过测试，设置后可以使用 https 和 http 来访问域名，但是默认使用 http。因此，为了域名可达，根目录中的 <code>_config.yml</code> 的 url 属性还是应该为 http 开头的。</p>
-<a id="more"></a>
 <h3 id="设置网站背景"><a href="#设置网站背景" class="headerlink" title="设置网站背景"></a>设置网站背景</h3><p>首先，选择你的背景图片，放在根目录下的 <code>themes/next/source/images/background.jpg</code>。</p>
 <p>然后，工程目录下的 <code>themes/next/source/css/_custom/coustom.styl</code> 文件添加代码:</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">// Custom styles.</span><br><span class="line">@<span class="keyword">media</span> screen and (min-width:<span class="number">1200px</span>) &#123;</span><br><span class="line"></span><br><span class="line">    <span class="selector-tag">body</span> &#123;</span><br><span class="line">        <span class="attribute">background-image</span>:<span class="built_in">url</span>(/images/background.jpg);</span><br><span class="line">        <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">        <span class="attribute">background-attachment</span>:fixed;</span><br><span class="line">        <span class="attribute">background-position</span>:<span class="number">50%</span> <span class="number">50%</span>;</span><br><span class="line">        <span class="attribute">background-size</span>: cover;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="selector-id">#footer</span> <span class="selector-tag">a</span> &#123;</span><br><span class="line">        <span class="attribute">color</span>:<span class="number">#eee</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
