@@ -5,9 +5,9 @@
   <subtitle>北冥有鱼，其名为鲲；化而为鸟，其名为鹏</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="https://thenorthsea.github.io/"/>
+  <link href="http://thenorthsea.cn/"/>
   <updated>2018-10-18T14:07:51.978Z</updated>
-  <id>https://thenorthsea.github.io/</id>
+  <id>http://thenorthsea.cn/</id>
   
   <author>
     <name>theNorthSea</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>我的网站的搭建配置</title>
-    <link href="https://thenorthsea.github.io/2018/10/17/%E6%AD%A4%E7%BD%91%E7%AB%99%E7%9A%84%E6%90%AD%E5%BB%BA/"/>
-    <id>https://thenorthsea.github.io/2018/10/17/此网站的搭建/</id>
+    <link href="http://thenorthsea.cn/2018/10/17/%E6%AD%A4%E7%BD%91%E7%AB%99%E7%9A%84%E6%90%AD%E5%BB%BA/"/>
+    <id>http://thenorthsea.cn/2018/10/17/此网站的搭建/</id>
     <published>2018-10-17T14:48:56.615Z</published>
     <updated>2018-10-18T14:07:51.978Z</updated>
     
@@ -33,17 +33,17 @@
     
     </summary>
     
-      <category term="网站搭建" scheme="https://thenorthsea.github.io/categories/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/"/>
+      <category term="网站搭建" scheme="http://thenorthsea.cn/categories/%E7%BD%91%E7%AB%99%E6%90%AD%E5%BB%BA/"/>
     
     
-      <category term="hexo" scheme="https://thenorthsea.github.io/tags/hexo/"/>
+      <category term="hexo" scheme="http://thenorthsea.cn/tags/hexo/"/>
     
   </entry>
   
   <entry>
     <title>facts &amp; opinions</title>
-    <link href="https://thenorthsea.github.io/2018/10/17/BBC%20skillswise/"/>
-    <id>https://thenorthsea.github.io/2018/10/17/BBC skillswise/</id>
+    <link href="http://thenorthsea.cn/2018/10/17/BBC%20skillswise/"/>
+    <id>http://thenorthsea.cn/2018/10/17/BBC skillswise/</id>
     <published>2018-10-17T08:11:17.000Z</published>
     <updated>2018-10-18T12:24:06.019Z</updated>
     
@@ -61,7 +61,7 @@
     
     </summary>
     
-      <category term="facts &amp; opinions" scheme="https://thenorthsea.github.io/categories/facts-opinions/"/>
+      <category term="facts &amp; opinions" scheme="http://thenorthsea.cn/categories/facts-opinions/"/>
     
     
   </entry>
