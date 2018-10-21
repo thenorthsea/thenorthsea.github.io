@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next gemini use-motion" lang="zh-Hans">
+<html class="theme-next muse use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -88,11 +88,11 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="我的网站的搭建配置">
 <meta property="og:url" content="http://thenorthsea.cn/2018/10/17/此网站的搭建/index.html">
-<meta property="og:site_name" content="北冥有鱼">
+<meta property="og:site_name" content="the North Sea&#39;s Blog">
 <meta property="og:description" content="我的这个网站使用 Github Page + hexo 搭建的，使用了 NexT 的主题。更多的个性化设置将在下文介绍。">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://thenorthsea.cn/images/background.jpg">
-<meta property="og:updated_time" content="2018-10-20T14:54:21.661Z">
+<meta property="og:updated_time" content="2018-10-21T05:29:56.887Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="我的网站的搭建配置">
 <meta name="twitter:description" content="我的这个网站使用 Github Page + hexo 搭建的，使用了 NexT 的主题。更多的个性化设置将在下文介绍。">
@@ -104,7 +104,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Gemini',
+    scheme: 'Muse',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
     fancybox: true,
@@ -132,7 +132,7 @@
 
 
 
-  <title>我的网站的搭建配置 | 北冥有鱼</title>
+  <title>我的网站的搭建配置 | the North Sea's Blog</title>
   
 
 
@@ -162,7 +162,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">北冥有鱼</span>
+        <span class="site-title">the North Sea's Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -312,7 +312,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="北冥有鱼">
+      <meta itemprop="name" content="the North Sea's Blog">
     </span>
 
     
@@ -344,8 +344,8 @@
                 <i class="fa fa-calendar-check-o"></i>
               </span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-10-20T22:54:21+08:00">
-                2018-10-20
+              <time title="更新于" itemprop="dateModified" datetime="2018-10-21T13:29:56+08:00">
+                2018-10-21
               </time>
             
           </span>
@@ -374,16 +374,6 @@
 
           
             
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/10/17/此网站的搭建/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/10/17/此网站的搭建/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
           
 
           
@@ -409,7 +399,7 @@
                 </span>
                 
                 <span title="字数统计">
-                  913 字
+                  961 字
                 </span>
               
 
@@ -423,7 +413,7 @@
                 </span>
                 
                 <span title="阅读时长">
-                  3  分钟
+                  4  分钟
                 </span>
               
             </div>
@@ -457,7 +447,15 @@
 <h3 id="设置网站背景"><a href="#设置网站背景" class="headerlink" title="设置网站背景"></a>设置网站背景</h3><p>首先，选择你的背景图片，放在根目录下的 <code>themes/next/source/images/background.jpg</code>。</p>
 <p>然后，工程目录下的 <code>themes/next/source/css/_custom/coustom.styl</code> 文件添加代码:</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">// Custom styles.</span><br><span class="line">@<span class="keyword">media</span> screen and (min-width:<span class="number">1200px</span>) &#123;</span><br><span class="line"></span><br><span class="line">    <span class="selector-tag">body</span> &#123;</span><br><span class="line">        <span class="attribute">background-image</span>:<span class="built_in">url</span>(/images/background.jpg);</span><br><span class="line">        <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">        <span class="attribute">background-attachment</span>:fixed;</span><br><span class="line">        <span class="attribute">background-position</span>:<span class="number">50%</span> <span class="number">50%</span>;</span><br><span class="line">        <span class="attribute">background-size</span>: cover;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="selector-id">#footer</span> <span class="selector-tag">a</span> &#123;</span><br><span class="line">        <span class="attribute">color</span>:<span class="number">#eee</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<h3 id="评论功能：-valine"><a href="#评论功能：-valine" class="headerlink" title="评论功能： valine"></a>评论功能： valine</h3><blockquote>
+<h3 id="评论功能："><a href="#评论功能：" class="headerlink" title="评论功能："></a>评论功能：</h3><h4 id="LiveRe-正在使用"><a href="#LiveRe-正在使用" class="headerlink" title="LiveRe (正在使用)"></a>LiveRe (正在使用)</h4><blockquote>
+<p>参考自 <a href="http://www.cduyzh.com/livere/#%E6%9D%A5%E5%BF%85%E5%8A%9B" title="http://www.cduyzh.com/livere/#%E6%9D%A5%E5%BF%85%E5%8A%9B" target="_blank" rel="noopener">网易云跟帖关闭服务后转移到来必力</a></p>
+</blockquote>
+<ol>
+<li>注册 <a href="www.livere.com" title="www.livere.com">LiveRe</a> 账号</li>
+<li>新建项目，获得 ID</li>
+<li>将 ID 填写到 NexT 主题配置文件</li>
+</ol>
+<h4 id="valine"><a href="#valine" class="headerlink" title="valine"></a>valine</h4><blockquote>
 <p>参考自 <a href="https://blog.csdn.net/blue_zy/article/details/79071414" title="https://blog.csdn.net/blue_zy/article/details/79071414" target="_blank" rel="noopener">为你的Hexo加上评论系统-Valine</a></p>
 </blockquote>
 <p> 步骤总结为：</p>
@@ -656,7 +654,9 @@
 
   
     <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80MDM0NS8xNjg3Mg=="></div>
     </div>
+
   
 
 
@@ -831,7 +831,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#域名-https-支持"><span class="nav-number">1.</span> <span class="nav-text">域名 https 支持</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置网站背景"><span class="nav-number">2.</span> <span class="nav-text">设置网站背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#评论功能：-valine"><span class="nav-number">3.</span> <span class="nav-text">评论功能： valine</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章阅读统计：-leancloud"><span class="nav-number">4.</span> <span class="nav-text">文章阅读统计： leancloud</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#搜索功能：-Local-Search"><span class="nav-number">5.</span> <span class="nav-text">搜索功能： Local Search</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章置顶"><span class="nav-number">6.</span> <span class="nav-text">文章置顶</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#写作样式"><span class="nav-number">7.</span> <span class="nav-text">写作样式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#FontAwesome-图标"><span class="nav-number">7.1.</span> <span class="nav-text">FontAwesome 图标</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代码块的标题设置"><span class="nav-number">7.2.</span> <span class="nav-text">代码块的标题设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#NexT-主题自带的-note-样式标签"><span class="nav-number">7.3.</span> <span class="nav-text">NexT 主题自带的 note 样式标签</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#NexT-文本居中的引用样式"><span class="nav-number">7.4.</span> <span class="nav-text">NexT 文本居中的引用样式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#NexT-超宽图片"><span class="nav-number">7.5.</span> <span class="nav-text">NexT 超宽图片</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#大佬的优化参考（强烈推荐阅读）"><span class="nav-number">8.</span> <span class="nav-text">大佬的优化参考（强烈推荐阅读）</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#域名-https-支持"><span class="nav-number">1.</span> <span class="nav-text">域名 https 支持</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置网站背景"><span class="nav-number">2.</span> <span class="nav-text">设置网站背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#评论功能："><span class="nav-number">3.</span> <span class="nav-text">评论功能：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#LiveRe-正在使用"><span class="nav-number">3.1.</span> <span class="nav-text">LiveRe (正在使用)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#valine"><span class="nav-number">3.2.</span> <span class="nav-text">valine</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章阅读统计：-leancloud"><span class="nav-number">4.</span> <span class="nav-text">文章阅读统计： leancloud</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#搜索功能：-Local-Search"><span class="nav-number">5.</span> <span class="nav-text">搜索功能： Local Search</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章置顶"><span class="nav-number">6.</span> <span class="nav-text">文章置顶</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#写作样式"><span class="nav-number">7.</span> <span class="nav-text">写作样式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#FontAwesome-图标"><span class="nav-number">7.1.</span> <span class="nav-text">FontAwesome 图标</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代码块的标题设置"><span class="nav-number">7.2.</span> <span class="nav-text">代码块的标题设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#NexT-主题自带的-note-样式标签"><span class="nav-number">7.3.</span> <span class="nav-text">NexT 主题自带的 note 样式标签</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#NexT-文本居中的引用样式"><span class="nav-number">7.4.</span> <span class="nav-text">NexT 文本居中的引用样式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#NexT-超宽图片"><span class="nav-number">7.5.</span> <span class="nav-text">NexT 超宽图片</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#大佬的优化参考（强烈推荐阅读）"><span class="nav-number">8.</span> <span class="nav-text">大佬的优化参考（强烈推荐阅读）</span></a></li></ol></div>
             
 
           </div>
@@ -965,13 +965,6 @@ show_date_time();
   
   
 
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
-
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
@@ -1006,6 +999,17 @@ show_date_time();
 
 
   
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
 
 
 
@@ -1019,28 +1023,6 @@ show_date_time();
   
 
 
-
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-  
-  <script type="text/javascript">
-    var GUEST = ['nick','mail','link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item=>{
-      return GUEST.indexOf(item)>-1;
-    });
-    new Valine({
-        el: '#comments' ,
-        verify: false,
-        notify: false,
-        appId: 'rRtBjR257ypw0C212eXTTmTK-gzGzoHsz',
-        appKey: 'iLV7EfGzWYv7Ec53mKSVHwcO',
-        placeholder: '齐天大圣到此一游',
-        avatar:'wavatar',
-        guest_info:guest,
-        pageSize:'10' || 10,
-    });
-  </script>
 
 
 

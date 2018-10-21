@@ -5,7 +5,7 @@
   
 
 
-<html class="theme-next gemini use-motion" lang="zh-Hans">
+<html class="theme-next muse use-motion" lang="zh-Hans">
 <head>
   <meta charset="UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -88,7 +88,7 @@
 <meta property="og:type" content="article">
 <meta property="og:title" content="facts &amp; opinions">
 <meta property="og:url" content="http://thenorthsea.cn/2018/10/17/BBC skillswise/index.html">
-<meta property="og:site_name" content="北冥有鱼">
+<meta property="og:site_name" content="the North Sea&#39;s Blog">
 <meta property="og:description" content="事实（facts）是真实的，可以被证实。 观点（opinion）是你认为的或你相信的。无法被证明正确或错误。 例如 1：  It’s is always a good idea to learn another language as peple in other countries are more friendly if you speak their language.  这是一个基于另一个">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://i.loli.net/2018/10/16/5bc55ef78f63b.png">
@@ -104,7 +104,7 @@
   var NexT = window.NexT || {};
   var CONFIG = {
     root: '/',
-    scheme: 'Gemini',
+    scheme: 'Muse',
     version: '5.1.4',
     sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
     fancybox: true,
@@ -132,7 +132,7 @@
 
 
 
-  <title>facts & opinions | 北冥有鱼</title>
+  <title>facts & opinions | the North Sea's Blog</title>
   
 
 
@@ -162,7 +162,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">北冥有鱼</span>
+        <span class="site-title">the North Sea's Blog</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -314,7 +314,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="北冥有鱼">
+      <meta itemprop="name" content="the North Sea's Blog">
     </span>
 
     
@@ -375,16 +375,6 @@
           
 
           
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2018/10/17/BBC skillswise/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count valine-comment-count" data-xid="/2018/10/17/BBC skillswise/" itemprop="commentCount"></span>
-                </a>
-              </span>
             
           
 
@@ -640,7 +630,9 @@
 
   
     <div class="comments" id="comments">
+      <div id="lv-container" data-id="city" data-uid="MTAyMC80MDM0NS8xNjg3Mg=="></div>
     </div>
+
   
 
 
@@ -949,13 +941,6 @@ show_date_time();
   
   
 
-
-  <script type="text/javascript" src="/js/src/affix.js?v=5.1.4"></script>
-
-  <script type="text/javascript" src="/js/src/schemes/pisces.js?v=5.1.4"></script>
-
-
-
   
   <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
 <script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
@@ -990,6 +975,17 @@ show_date_time();
 
 
   
+    <script type="text/javascript">
+      (function(d, s) {
+        var j, e = d.getElementsByTagName(s)[0];
+        if (typeof LivereTower === 'function') { return; }
+        j = d.createElement(s);
+        j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+        j.async = true;
+        e.parentNode.insertBefore(j, e);
+      })(document, 'script');
+    </script>
+  
 
 
 
@@ -1003,28 +999,6 @@ show_date_time();
   
 
 
-
-  <script src="//cdn1.lncld.net/static/js/3.0.4/av-min.js"></script>
-  <script src="//unpkg.com/valine/dist/Valine.min.js"></script>
-  
-  <script type="text/javascript">
-    var GUEST = ['nick','mail','link'];
-    var guest = 'nick,mail,link';
-    guest = guest.split(',').filter(item=>{
-      return GUEST.indexOf(item)>-1;
-    });
-    new Valine({
-        el: '#comments' ,
-        verify: false,
-        notify: false,
-        appId: 'rRtBjR257ypw0C212eXTTmTK-gzGzoHsz',
-        appKey: 'iLV7EfGzWYv7Ec53mKSVHwcO',
-        placeholder: '齐天大圣到此一游',
-        avatar:'wavatar',
-        guest_info:guest,
-        pageSize:'10' || 10,
-    });
-  </script>
 
 
 
