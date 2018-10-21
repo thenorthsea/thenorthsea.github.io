@@ -17,10 +17,6 @@
 
 
 
-  
-  
-  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
-
 
 
 
@@ -101,7 +97,7 @@
     root: '/',
     scheme: 'Muse',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideUpIn","post_body":"slideUpIn","coll_header":"slideUpIn","sidebar":"slideUpIn"}},
@@ -285,11 +281,12 @@
             
 
   <div id="posts" class="posts-expand">
-    
-    
-    
-    <div class="post-block page">
-      <header class="post-header">
+    <div class="post" style="opacity: 1; display:block;transform-origin:50% 50% 0px;">
+      
+      
+      
+      <div class="post-block page">
+        <header class="post-header">
 
 	<h2 class="post-title" itemprop="name headline"></h2>
 
@@ -297,13 +294,13 @@
 
 </header>
 
-      
-      
-      
-      <div class="post-body han-init-context">
         
         
-          <!DOCTYPE HTML>
+        
+        <div class="post-body">
+          
+          
+            <!DOCTYPE HTML>
 <html>
 <head>
   <meta http-equiv="content-type" content="text/html;charset=utf-8;">
@@ -319,11 +316,12 @@
   <script src="https://qzone.qq.com/gy/404/page.js" charset="utf-8"></script>
 </body>
 </html>
+          
+        </div>
+        
+        
         
       </div>
-      
-      
-      
     </div>
     
     

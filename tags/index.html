@@ -17,10 +17,6 @@
 
 
 
-  
-  
-  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
-
 
 
 
@@ -104,7 +100,7 @@
     root: '/',
     scheme: 'Muse',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
+    sidebar: {"position":"left","display":"hide","offset":12,"b2t":false,"scrollpercent":true,"onmobile":true},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":true,"transition":{"post_block":"fadeIn","post_header":"slideUpIn","post_body":"slideUpIn","coll_header":"slideUpIn","sidebar":"slideUpIn"}},
@@ -288,11 +284,12 @@
             
 
   <div id="posts" class="posts-expand">
-    
-    
-    
-    <div class="post-block page">
-      <header class="post-header">
+    <div class="post" style="opacity: 1; display:block;transform-origin:50% 50% 0px;">
+      
+      
+      
+      <div class="post-block page">
+        <header class="post-header">
 
 	<h2 class="post-title" itemprop="name headline">tags</h2>
 
@@ -300,25 +297,26 @@
 
 </header>
 
-      
-      
-      
-      <div class="post-body han-init-context">
         
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-                目前共计 2 个标签
+        
+        <div class="post-body">
+          
+          
+            <div class="tag-cloud">
+              <div class="tag-cloud-title">
+                  目前共计 2 个标签
+              </div>
+              <div class="tag-cloud-tags">
+                <a href="/tags/NexT/" style="font-size: 12px; color: #ccc">NexT</a> <a href="/tags/hexo/" style="font-size: 12px; color: #ccc">hexo</a>
+              </div>
             </div>
-            <div class="tag-cloud-tags">
-              <a href="/tags/NexT/" style="font-size: 12px; color: #ccc">NexT</a> <a href="/tags/hexo/" style="font-size: 12px; color: #ccc">hexo</a>
-            </div>
-          </div>
+          
+        </div>
+        
+        
         
       </div>
-      
-      
-      
     </div>
     
     
