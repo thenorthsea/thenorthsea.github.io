@@ -2016,7 +2016,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #dfa358;
+  background: #78ff9d;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2880,17 +2880,15 @@ embed {
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
 }
-@media screen and (min-width: 1200px) {
-  body {
-    background-image: url("/images/background.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: 50% 50%;
-    background-size: cover;
-  }
-  #footer a {
-    color: #eee;
-  }
+body {
+  background-image: url("/images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: 50% 50%;
+  background-size: cover;
+}
+#footer a {
+  color: #eee;
 }
 a {
   color: #5073b8;
@@ -2927,7 +2925,7 @@ a:hover {
   float: none;
   margin-left: 0px;
   text-align: center;
-  background-color: #333;
+  background-image: url("/images/header-bk.png");
 }
 .brand {
   background-color: rgba(255,255,255,0);
@@ -3437,7 +3435,7 @@ code.description {
   .site-title {
     font-size: 20px !important;
     letter-spacing: 0px !important;
-    line-height: 40px;
+    line-height: 80px;
   }
   .site-subtitle {
     letter-spacing: 0px !important;
