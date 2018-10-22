@@ -2016,7 +2016,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #7f5ef9;
+  background: #2f0a7e;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2880,6 +2880,15 @@ embed {
 .links-of-blogroll-inline .links-of-blogroll-item {
   display: inline-block;
 }
+a {
+  color: #5073b8;
+  border-bottom: none;
+}
+a:hover {
+  color: #a166ab;
+  border-bottom-color: #a166ab;
+  border-bottom: none;
+}
 .header {
   line-height: 1.5;
 }
@@ -2924,6 +2933,7 @@ embed {
 .site-subtitle {
   margin: 0px;
   font-size: 16px;
+  font-family: 'Comic Sans MS', sans-serif;
   letter-spacing: 1px;
   padding-bottom: 3px;
   font-weight: lighter;
@@ -2941,14 +2951,11 @@ embed {
   background-color: rgba(255,255,255,0.75);
   box-shadow: 0px 10px 10px 0px rgba(0,0,0,0.15);
 }
-.menu .menu-item a {
-  font-size: 15px;
-}
 .menu .menu-item {
   margin: 5px 15px;
 }
 .menu .menu-item a:hover {
-  border-bottom-color: rgba(161,102,171,0);
+  border-bottom: none;
 }
 .post {
   margin-bottom: 50px;
@@ -2957,8 +2964,7 @@ embed {
   background-color: #fff;
 }
 .posts-expand .post-title {
-  font-size: 26px;
-  font-weight: 700;
+  font-size: 30px;
 }
 .posts-expand .post-meta {
   margin: 10px 0px 20px 0px;
@@ -3048,14 +3054,6 @@ h6 {
   background-color: #fff;
   box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.35);
   margin: 80px 0px 40px 0px;
-}
-a {
-  color: #5073b8;
-  border-bottom-color: #5073b8;
-}
-a:hover {
-  color: #a166ab;
-  border-bottom-color: #a166ab;
 }
 hr {
   margin: 10px 0px 30px 0px;
@@ -3277,6 +3275,53 @@ img:hover {
 .local-search-popup .popup-btn-close {
   border-left: none;
 }
+.post-body a {
+  color: #5073b8;
+  border-bottom: none;
+}
+.post-body a:hover {
+  color: #a166ab;
+  border-bottom: none;
+  text-decoration: underline;
+}
+.tag-cloud a {
+  border-bottom: 1px solid #5073b8;
+  text-decoration: none;
+}
+.tag-cloud a:hover {
+  border-bottom: 1px solid #a166ab;
+  text-decoration: none;
+}
+a.categories {
+  color: #5073b8;
+  border-bottom: none;
+  text-decoration: underline;
+}
+a.categories:hover {
+  color: #a166ab;
+  border-bottom: 1px solid #a166ab;
+  text-decoration: underline;
+}
+.post-body .tabs ul.nav-tabs li.tab a {
+  text-decoration: none;
+}
+a.fancybox {
+  text-decoration: none !important;
+}
+.btn {
+  color: #fff !important;
+  text-decoration: none !important;
+  border: 2px solid #222 !important;
+}
+.btn:hover {
+  color: #222 !important;
+}
+#heart {
+  animation: heartAnimate 1.33s ease-in-out infinite;
+}
+.with-love {
+  color: #ff71a8;
+}
 .post-sticky-flag {
   font-size: inherit;
   float: left;
@@ -3397,4 +3442,124 @@ code.description {
 }
 .post-nav {
   margin-top: 30px;
+}
+@-moz-keyframes heartAnimate {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  10%, 30% {
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  50%, 70% {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@-webkit-keyframes heartAnimate {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  10%, 30% {
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  50%, 70% {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@-o-keyframes heartAnimate {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  10%, 30% {
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  50%, 70% {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+}
+@keyframes heartAnimate {
+  0%, 100% {
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -o-transform: scale(1);
+    transform: scale(1);
+  }
+  10%, 30% {
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  20%, 40%, 60%, 80% {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  50%, 70% {
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+  }
 }
