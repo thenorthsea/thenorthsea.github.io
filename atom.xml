@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>the North Sea&#39;s Blog</title>
+  <title>北冥有鱼</title>
   
-  <subtitle>北冥有鱼，其名为鲲；化而为鸟，其名为鹏</subtitle>
+  
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://thenorthsea.cn/"/>
