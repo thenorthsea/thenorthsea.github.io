@@ -91,12 +91,13 @@
 <meta property="og:site_name" content="the North Sea&#39;s Blog">
 <meta property="og:description" content="我的这个网站使用 Github Page + hexo 搭建的，使用了 NexT 的主题。更多的个性化设置将在下文介绍。">
 <meta property="og:locale" content="zh-Hans">
+<meta property="og:image" content="http://thenorthsea.cn/2018/10/17/此网站的搭建/1540214609371.png">
 <meta property="og:image" content="http://thenorthsea.cn/images/theNorthSea.jpg">
-<meta property="og:updated_time" content="2018-10-22T06:16:04.768Z">
+<meta property="og:updated_time" content="2018-10-22T14:43:44.753Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="我的网站的搭建配置">
 <meta name="twitter:description" content="我的这个网站使用 Github Page + hexo 搭建的，使用了 NexT 的主题。更多的个性化设置将在下文介绍。">
-<meta name="twitter:image" content="http://thenorthsea.cn/images/theNorthSea.jpg">
+<meta name="twitter:image" content="http://thenorthsea.cn/2018/10/17/此网站的搭建/1540214609371.png">
 
 
 
@@ -344,7 +345,7 @@
                 <i class="fa fa-calendar-check-o"></i>
               </span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-10-22T14:16:04+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-10-22T22:43:44+08:00">
                 2018-10-22
               </time>
             
@@ -399,7 +400,7 @@
                 </span>
                 
                 <span title="字数统计">
-                  961 字
+                  1k 字
                 </span>
               
 
@@ -437,13 +438,14 @@
         <p>我的这个网站使用 <a href="https://pages.github.com/" title="https://pages.github.com/" target="_blank" rel="noopener">Github Page</a> + <a href="https://hexo.io/zh-cn/" title="https://hexo.io/zh-cn/" target="_blank" rel="noopener">hexo</a> 搭建的，使用了 <a href="http://theme-next.iissnan.com/getting-started.html" title="http://theme-next.iissnan.com/getting-started.html" target="_blank" rel="noopener">NexT</a> 的主题。更多的个性化设置将在下文介绍。</p>
 <a id="more"></a>
 <h3 id="域名-https-支持"><a href="#域名-https-支持" class="headerlink" title="域名 https 支持"></a>域名 https 支持</h3><blockquote>
-<p>参考了 Github 官方博客 <a href="https://blog.github.com/2018-05-01-github-pages-custom-domains-https/" title="https://blog.github.com/2018-05-01-github-pages-custom-domains-https/" target="_blank" rel="noopener">Custom domains on GitHub Pages gain support for HTTPS</a></p>
+<p>参考了 Github 官方博客 <a href="https://blog.github.com/2018-05-01-github-pages-custom-domains-https/" title="https://blog.github.com/2018-05-01-github-pages-custom-domains-https/" target="_blank" rel="noopener">Custom domains on GitHub Pages gain support for HTTPS(2018/5/1)</a></p>
 </blockquote>
 <p>总结步骤：</p>
-<ol>
-<li>在域名解析商添加解析到 username.github.io 的 CANME 记录</li>
-<li>再 github page 的 repository 的设置中打开 Enforce HTTPS</li>
-</ol>
+<p>① 在域名解析商添加解析到 username.github.io 的 CNAME 记录，等待解析完成</p>
+<p><img src="1540214609371.png" alt="1540214609371"></p>
+<p>② 在 hexo 博客 sources 文件夹下添加 CNAME 文件，内容为你的域名</p>
+<figure class="highlight bash"><figcaption><span>文件位置：~/blog/sources/CNAME</span><a href="https://github.com/thenorthsea/thenorthsea.github.io/blob/master/CNAME" target="_blank" rel="noopener">link</a></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">thenorthsea.cn</span><br></pre></td></tr></table></figure>
+<p>③ 进入 GitHub 博客所在的 repository，点击 Settings ，勾选 GitHub Page 章节下的 Enforce HTTPS 按钮</p>
 <h3 id="设置网站背景"><a href="#设置网站背景" class="headerlink" title="设置网站背景"></a>设置网站背景</h3><p>首先，选择你的背景图片，放在根目录下的 <code>themes/next/source/images/background.jpg</code>。</p>
 <p>然后，工程目录下的 <code>themes/next/source/css/_custom/coustom.styl</code> 文件添加代码:</p>
 <figure class="highlight css"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">// Custom styles.</span><br><span class="line">@<span class="keyword">media</span> screen and (min-width:<span class="number">1200px</span>) &#123;</span><br><span class="line"></span><br><span class="line">    <span class="selector-tag">body</span> &#123;</span><br><span class="line">        <span class="attribute">background-image</span>:<span class="built_in">url</span>(/images/background.jpg);</span><br><span class="line">        <span class="attribute">background-repeat</span>: no-repeat;</span><br><span class="line">        <span class="attribute">background-attachment</span>:fixed;</span><br><span class="line">        <span class="attribute">background-position</span>:<span class="number">50%</span> <span class="number">50%</span>;</span><br><span class="line">        <span class="attribute">background-size</span>: cover;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="selector-id">#footer</span> <span class="selector-tag">a</span> &#123;</span><br><span class="line">        <span class="attribute">color</span>:<span class="number">#eee</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -500,7 +502,7 @@
 <h3 id="写作样式"><a href="#写作样式" class="headerlink" title="写作样式"></a>写作样式</h3><h4 id="FontAwesome-图标"><a href="#FontAwesome-图标" class="headerlink" title="FontAwesome 图标"></a>FontAwesome 图标</h4><p><a href="https://fontawesome.com/v4.7.0/" title="https://fontawesome.com/v4.7.0/" target="_blank" rel="noopener">FontAwesome</a> 样式可以直接在 markdown 文件中使用。下面给出一些例子，更多请看官网的<a href="https://fontawesome.com/v4.7.0/examples/" title="https://fontawesome.com/v4.7.0/examples/" target="_blank" rel="noopener">使用示例</a>。</p>
 <figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&lt;i <span class="class"><span class="keyword">class</span></span>=<span class="string">"fa fa-pencil"</span> aria-hidden=<span class="string">"true"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span>  铅笔</span><br><span class="line">&lt;i <span class="class"><span class="keyword">class</span></span>=<span class="string">"fa fa-car"</span> aria-hidden=<span class="string">"true"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span>  汽车</span><br><span class="line">&lt;i <span class="class"><span class="keyword">class</span></span>=<span class="string">"fa fa-coffee"</span> aria-hidden=<span class="string">"true"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span>  咖啡</span><br><span class="line">&lt;i <span class="class"><span class="keyword">class</span></span>=<span class="string">"fa fa-cube"</span> aria-hidden=<span class="string">"true"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span>  立方</span><br><span class="line">&lt;i <span class="class"><span class="keyword">class</span></span>=<span class="string">"fa fa-cube fa-lg"</span> aria-hidden=<span class="string">"true"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span>  立方 放大 <span class="number">33</span>%</span><br><span class="line">&lt;i <span class="class"><span class="keyword">class</span></span>=<span class="string">"fa fa-cube fa-2x"</span> aria-hidden=<span class="string">"true"</span>&gt;<span class="xml"><span class="tag">&lt;/<span class="name">i</span>&gt;</span></span>  立方 两倍大</span><br></pre></td></tr></table></figure>
 <p><i class="fa fa-pencil" aria-hidden="true"></i>  铅笔<br><i class="fa fa-car" aria-hidden="true"></i>  汽车<br><i class="fa fa-coffee" aria-hidden="true"></i>  咖啡<br><i class="fa fa-cube" aria-hidden="true"></i>  立方<br><i class="fa fa-cube fa-lg" aria-hidden="true"></i>  立方 放大 33%<br><i class="fa fa-cube fa-2x" aria-hidden="true"></i>  立方 两倍大</p>
-<h4 id="代码块的标题设置"><a href="#代码块的标题设置" class="headerlink" title="代码块的标题设置"></a>代码块的标题设置</h4><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">```diff</span> <span class="string">文件位置：~/blog/_config.yml</span></span><br><span class="line"><span class="attr">highlight:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  line_number:</span> <span class="literal">true</span></span><br><span class="line"><span class="comment"># 代码自动高亮</span></span><br><span class="line"><span class="attr">-  auto_detect:</span> <span class="literal">false</span></span><br><span class="line"><span class="string">+</span>  <span class="attr">auto_detect:</span> <span class="literal">true</span></span><br><span class="line"><span class="string">```</span></span><br></pre></td></tr></table></figure>
+<h4 id="代码块的标题设置"><a href="#代码块的标题设置" class="headerlink" title="代码块的标题设置"></a>代码块的标题设置</h4><figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">​```diff</span> <span class="string">文件位置：~/blog/_config.yml</span></span><br><span class="line"><span class="attr">highlight:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  line_number:</span> <span class="literal">true</span></span><br><span class="line"><span class="comment"># 代码自动高亮</span></span><br><span class="line"><span class="attr">-  auto_detect:</span> <span class="literal">false</span></span><br><span class="line"><span class="string">+</span>  <span class="attr">auto_detect:</span> <span class="literal">true</span></span><br><span class="line"><span class="string">​```</span></span><br></pre></td></tr></table></figure>
 <figure class="highlight diff"><figcaption><span>文件位置：~/blog/_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">highlight:</span><br><span class="line">  enable: true</span><br><span class="line">  line_number: true</span><br><span class="line"># 代码自动高亮</span><br><span class="line"><span class="deletion">-  auto_detect: false</span></span><br><span class="line"><span class="addition">+  auto_detect: true</span></span><br></pre></td></tr></table></figure>
 <h4 id="NexT-主题自带的-note-样式标签"><a href="#NexT-主题自带的-note-样式标签" class="headerlink" title="NexT 主题自带的 note 样式标签"></a>NexT 主题自带的 note 样式标签</h4><blockquote>
 <p>参考自 <a href="http://theme-next.iissnan.com/tag-plugins.html#bootstrap-callout" title="http://theme-next.iissnan.com/tag-plugins.html#bootstrap-callout" target="_blank" rel="noopener">Next 官方文档：内建标签#BC</a></p>

@@ -2016,7 +2016,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #78ff9d;
+  background: #ffff3d;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2926,6 +2926,7 @@ a:hover {
   margin-left: 0px;
   text-align: center;
   background-image: url("/images/header-bk.png");
+  background-color: #333;
 }
 .brand {
   background-color: rgba(255,255,255,0);
