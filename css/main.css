@@ -2016,7 +2016,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #a6a8be;
+  background: #d1c3cc;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -2881,7 +2881,7 @@ embed {
   display: inline-block;
 }
 body {
-  background-image: url("/images/background.jpg");
+  background-image: url("blog/images/background.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: 50% 50%;
@@ -2925,7 +2925,7 @@ a:hover {
   float: none;
   margin-left: 0px;
   text-align: center;
-  background-image: url("/images/header-bk.png");
+  background-image: url("blog/images/header-bk.png");
   background-color: #333;
 }
 .brand {
