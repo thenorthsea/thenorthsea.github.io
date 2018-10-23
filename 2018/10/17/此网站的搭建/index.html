@@ -93,7 +93,7 @@
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="https://thenorthsea.github.io/2018/10/17/此网站的搭建/1540214609371.png">
 <meta property="og:image" content="https://thenorthsea.github.io/images/theNorthSea.jpg">
-<meta property="og:updated_time" content="2018-10-22T15:46:45.901Z">
+<meta property="og:updated_time" content="2018-10-23T08:31:09.181Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="我的网站的搭建配置">
 <meta name="twitter:description" content="我的这个网站使用 Github Page + hexo 搭建的，使用了 NexT 的主题。更多的个性化设置将在下文介绍。">
@@ -345,8 +345,8 @@
                 <i class="fa fa-calendar-check-o"></i>
               </span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-10-22T23:46:45+08:00">
-                2018-10-22
+              <time title="更新于" itemprop="dateModified" datetime="2018-10-23T16:31:09+08:00">
+                2018-10-23
               </time>
             
           </span>
@@ -400,7 +400,7 @@
                 </span>
                 
                 <span title="字数统计">
-                  1k 字
+                  1.2k 字
                 </span>
               
 
@@ -414,7 +414,7 @@
                 </span>
                 
                 <span title="阅读时长">
-                  4  分钟
+                  5  分钟
                 </span>
               
             </div>
@@ -485,6 +485,16 @@
 <li>编译站点配置文件</li>
 <li>编辑主题配置文件</li>
 </ol>
+<h3 id="五星好评"><a href="#五星好评" class="headerlink" title="五星好评"></a>五星好评</h3><blockquote>
+<p>参考自 <a href="https://reuixiy.github.io/technology/computer/computer-aided-art/2017/06/09/hexo-next-optimization.html#%E6%96%87%E7%AB%A0%E5%BA%95%E9%83%A8%E5%8A%A0%E4%B8%8A%E8%AF%84%E5%88%86%E5%B0%8F%E6%98%9F%E6%98%9F" target="_blank" rel="noopener">大佬 @reuixiy</a></p>
+</blockquote>
+<p>① 打开主题配置文件，找到 <code>rating</code> 属性</p>
+<figure class="highlight js"><figcaption><span>文件位置：~/blog/themes/next/_config.yml</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"># Star rating support to each article.</span><br><span class="line"># To get your ID visit https://widgetpack.com</span><br><span class="line">rating:</span><br><span class="line">  enable: <span class="literal">true</span></span><br><span class="line">  id:     </span><br><span class="line">  color: f79533</span><br></pre></td></tr></table></figure>
+<p>② 打开注释中的网页，注册账号，填写博客信息，左上角有个 ID，填写进主题配置文件</p>
+<p>③ 修改界面，添加文字说明：</p>
+<figure class="highlight diff"><figcaption><span>文件位置：~/blog/themes/next/layout/_macro/post.swig</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">    &#123;% if theme.rating.enable %&#125;</span><br><span class="line">    &lt;div class="wp_rating"&gt;</span><br><span class="line"><span class="addition">+      &lt;div style="color: rgba(0, 0, 0, 0.75); font-size:13px; letter-spacing:3px"&gt;(&amp;gt;看完记得五星好评哦亲&amp;lt;)&lt;/div&gt;</span></span><br><span class="line">    &lt;div id="wpac-rating"&gt;&lt;/div&gt;</span><br><span class="line">    &lt;/div&gt;</span><br><span class="line">    &#123;% endif %&#125;</span><br></pre></td></tr></table></figure>
+<p>④ 检查生成的网页，如果留白不合适，可以执行修改，比如我的修改：</p>
+<figure class="highlight diff"><figcaption><span>文件位置：~/blog/themes/next/source/css/_custom/_custom.styl</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="addition">+	// 为五星好评留出空间</span></span><br><span class="line"><span class="addition">+	.post-nav &#123;</span></span><br><span class="line"><span class="addition">+ 	   margin-top: 30px;</span></span><br><span class="line"><span class="addition">+	&#125;</span></span><br></pre></td></tr></table></figure>
 <h3 id="文章置顶"><a href="#文章置顶" class="headerlink" title="文章置顶"></a>文章置顶</h3><blockquote>
 <p>参考了 <a href="https://reuixiy.github.io/technology/computer/computer-aided-art/2017/06/09/hexo-next-optimization.html#%E6%96%87%E7%AB%A0%E7%BD%AE%E9%A1%B6" title="https://reuixiy.github.io/technology/computer/computer-aided-art/2017/06/09/hexo-next-optimization.html#%E6%96%87%E7%AB%A0%E7%BD%AE%E9%A1%B6" target="_blank" rel="noopener">大佬 @reuixiy 的博客</a></p>
 </blockquote>
@@ -837,7 +847,7 @@ show_date_time();
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#域名-https-支持"><span class="nav-number">1.</span> <span class="nav-text">域名 https 支持</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置网站背景"><span class="nav-number">2.</span> <span class="nav-text">设置网站背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#评论功能："><span class="nav-number">3.</span> <span class="nav-text">评论功能：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#LiveRe-正在使用"><span class="nav-number">3.1.</span> <span class="nav-text">LiveRe (正在使用)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#valine"><span class="nav-number">3.2.</span> <span class="nav-text">valine</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章阅读统计：-leancloud"><span class="nav-number">4.</span> <span class="nav-text">文章阅读统计： leancloud</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#搜索功能：-Local-Search"><span class="nav-number">5.</span> <span class="nav-text">搜索功能： Local Search</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章置顶"><span class="nav-number">6.</span> <span class="nav-text">文章置顶</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#写作样式"><span class="nav-number">7.</span> <span class="nav-text">写作样式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#FontAwesome-图标"><span class="nav-number">7.1.</span> <span class="nav-text">FontAwesome 图标</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代码块的标题设置"><span class="nav-number">7.2.</span> <span class="nav-text">代码块的标题设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#NexT-主题自带的-note-样式标签"><span class="nav-number">7.3.</span> <span class="nav-text">NexT 主题自带的 note 样式标签</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#NexT-文本居中的引用样式"><span class="nav-number">7.4.</span> <span class="nav-text">NexT 文本居中的引用样式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#NexT-超宽图片"><span class="nav-number">7.5.</span> <span class="nav-text">NexT 超宽图片</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#大佬的优化参考（强烈推荐阅读）"><span class="nav-number">8.</span> <span class="nav-text">大佬的优化参考（强烈推荐阅读）</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#域名-https-支持"><span class="nav-number">1.</span> <span class="nav-text">域名 https 支持</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#设置网站背景"><span class="nav-number">2.</span> <span class="nav-text">设置网站背景</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#评论功能："><span class="nav-number">3.</span> <span class="nav-text">评论功能：</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#LiveRe-正在使用"><span class="nav-number">3.1.</span> <span class="nav-text">LiveRe (正在使用)</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#valine"><span class="nav-number">3.2.</span> <span class="nav-text">valine</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章阅读统计：-leancloud"><span class="nav-number">4.</span> <span class="nav-text">文章阅读统计： leancloud</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#搜索功能：-Local-Search"><span class="nav-number">5.</span> <span class="nav-text">搜索功能： Local Search</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#五星好评"><span class="nav-number">6.</span> <span class="nav-text">五星好评</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#文章置顶"><span class="nav-number">7.</span> <span class="nav-text">文章置顶</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#写作样式"><span class="nav-number">8.</span> <span class="nav-text">写作样式</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#FontAwesome-图标"><span class="nav-number">8.1.</span> <span class="nav-text">FontAwesome 图标</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#代码块的标题设置"><span class="nav-number">8.2.</span> <span class="nav-text">代码块的标题设置</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#NexT-主题自带的-note-样式标签"><span class="nav-number">8.3.</span> <span class="nav-text">NexT 主题自带的 note 样式标签</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#NexT-文本居中的引用样式"><span class="nav-number">8.4.</span> <span class="nav-text">NexT 文本居中的引用样式</span></a></li><li class="nav-item nav-level-4"><a class="nav-link" href="#NexT-超宽图片"><span class="nav-number">8.5.</span> <span class="nav-text">NexT 超宽图片</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#大佬的优化参考（强烈推荐阅读）"><span class="nav-number">9.</span> <span class="nav-text">大佬的优化参考（强烈推荐阅读）</span></a></li></ol></div>
             
 
           </div>
