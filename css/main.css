@@ -2016,7 +2016,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ff5;
+  background: #144760;
 }
 .links-of-blogroll {
   font-size: 13px;
@@ -3282,7 +3282,7 @@ img:hover {
   color: #828282;
 }
 .post-block.page {
-  margin-top: 40px;
+  margin-top: 0px;
 }
 .tag-cloud {
   margin: -80px 50px 40px 50px;
